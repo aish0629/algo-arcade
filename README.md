@@ -19,14 +19,17 @@ Each problem is a “game,” each solution an “upgrade,” and each concept a
 - 🟣 **Secret Levels:** Beautiful tricks, optimizations, mind-benders  
 
 ## 🗂️ Structure
+
+```text
 algo-arcade/
-├── arrays/
-├── strings/
-├── graphs/
-├── dp/
-├── math/
-├── notes/
-└── utils/
+├── C#/
+    ├──arrays/
+    ├── strings/
+    ├── notes/
+    └── utils/
+```
+
+
 
 
 ## 🔧 Tools & Rules
