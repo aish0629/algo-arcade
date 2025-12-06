@@ -96,3 +96,9 @@ dotnet run
 ## Next Steps
 
 Consider adding a GitHub Actions workflow to automate testing on push or pull requests. You can also include a badge in this README to show the build status.
+
+![.NET Tests](https://github.com/aish0629/algo-arcade/actions/workflows/dotnet-tests.yml/badge.svg)
+
+# .NET Tests
+
+This repository includes tests that are run automatically on push and pull requests.
