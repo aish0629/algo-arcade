@@ -68,32 +68,31 @@ dotnet test --filter FullyQualifiedName~AlgoArcade.Strings.Tests.ReverseStringTe
 - Add an NUnit alternative or extend tests to cover additional edge cases (Unicode, huge inputs).
 
 If you want, I can add CI workflow and a `README` badge showing test status.
-# C# String Utilities
 
-This folder contains a small .NET console project demonstrating string/array utilities ported from JS/Python implementations.
+# StringUtils Tests
 
-## Project structure
+This project contains xUnit tests for the StringUtils library.
 
-```
-C#/StringUtils/
-├── StringUtils.csproj
-├── StringUtilities.cs   # utility methods
-├── Program.cs           # runner demonstrating positive/negative scenarios
-└── README.md
-```
+## Running Tests
 
-## Requirements
-- .NET SDK 6.0 or 7.0 installed (tested with .NET 7)
+To run the tests, navigate to the test project directory and use the following command:
 
-## Run
-Open PowerShell in this folder and run:
-
-```powershell
-dotnet run --project StringUtils.csproj
+```bash
+cd "C#/StringUtils.Tests"
+dotnet test --nologo -v minimal
 ```
 
-This prints positive and negative scenarios to the console.
+## Example Commands
 
-## Notes
-- Methods are in namespace `AlgoArcade.Strings` and class `StringUtilities`.
-- Null inputs map to `null`/`false`/empty as appropriate to match the JS/Python behavior.
+- To run the tests:
+  ```bash
+dotnet test
+```
+- To run the project:
+  ```bash
+dotnet run
+```
+
+## Next Steps
+
+Consider adding a GitHub Actions workflow to automate testing on push or pull requests. You can also include a badge in this README to show the build status.
