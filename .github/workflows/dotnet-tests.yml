@@ -19,7 +19,7 @@ jobs:
     - name: Setup .NET
       uses: actions/setup-dotnet@v1
       with:
-        dotnet-version: '6.0.x'
+        dotnet-version: '9.0.x'
 
     - name: Restore dependencies
       run: dotnet restore
@@ -27,9 +27,9 @@ jobs:
     - name: Run tests
       run: dotnet test --no-restore --verbosity normal
 
-    # - name: Upload test results
-    #   if: always()
-    #   uses: actions/upload-artifact@v2
-    #   with:
-    #     name: test-results
-    #     path: **/TestResults.xml
+    - name: Upload test results
+      if: always()
+      uses: actions/upload-artifact@v2
+      with:
+        name: test-results
+        path: **/TestResults.xml
